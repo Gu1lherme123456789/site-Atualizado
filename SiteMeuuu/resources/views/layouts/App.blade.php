@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConhecimentoPremium</title>
     <style>
+
+.materias{
+    font-size: 40px;
+    font-weight: 700;
+    color: #949e65;
+}
+#cabecalhoLogin{
+    display: grid;  
+    
+}
+
+
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px purple;
+}
+
+
   body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin: 0;
@@ -34,6 +53,7 @@
 
     #cabecalhologin1{
         font-weight: bold;
+        border-bottom: solid black 5px;
     }
 
    #registro-form {
@@ -147,7 +167,8 @@
 .hover-image {
   transition: transform 0.3s ease; 
 
-  height: 400px;
+  height: 440px;
+  width: 290px;
 }
 
 .hover-image:hover {
@@ -159,7 +180,7 @@ h1 {
 }
 
 .div {
-    border: solid black 7px;
+    border: solid purple 7px;
     text-align: center;
     width: 290px;
     margin-bottom: 15px;
