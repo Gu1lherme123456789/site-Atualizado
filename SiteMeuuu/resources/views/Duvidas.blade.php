@@ -2,9 +2,10 @@
 
 @section('conteudo')
 <div class="navegacao">
-        <a href="/Comentarios"> < Faça seu comentario</a>
-        <a href="/Conteudos"> < Nossos conteudos ></a>
-        <a href="/Duvidas">Tem alguma duvida? clique aqui ></a>        
+        <a href="/Comentarios"> < Faça seu comentario > </a>
+        <a href="/Conteudos"> < Nossos conteudos > </a>
+        <a href="/Duvidas">< Tem alguma duvida? clique aqui > </a>
+        <a href="/Avaliacao"> < Avalie-nos > </a>       
 </div>
 <div id="cabecalhoLogin">
         <h1 id="cabcalhoLogin1">Pagina de Dúvidas</h1>

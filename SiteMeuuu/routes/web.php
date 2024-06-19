@@ -33,3 +33,27 @@ Route::get('/Conteudos', function () {
     return view('Conteudos');
 });
 
+Route::get('/Avaliacao', function () {
+    return view('Avaliacao');
+});
+
+Route::get('/PaginaMatematica', function () {
+    return view('PaginaMatematica');
+});
+
+Route::get('/PaginaPortugues', function () {
+    return view('PaginaPortugues');
+});
+
+Route::get('/PaginaHistoria', function () {
+    return view('PaginaHistoria');
+});
+
+Route::get('/PaginaGeografia', function () {
+    return view('PaginaGeografia');
+});
+
+Route::get('/Contato', function () {
+    return view('Contato');
+});
+
