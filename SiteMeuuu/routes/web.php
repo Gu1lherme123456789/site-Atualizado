@@ -53,6 +53,18 @@ Route::get('/PaginaGeografia', function () {
     return view('PaginaGeografia');
 });
 
+Route::get('/PaginaQuimica', function () {
+    return view('PaginaQuimica');
+});
+
+Route::get('/PaginaFisica', function () {
+    return view('PaginaFisica');
+});
+
+Route::get('/PaginaBiologia', function () {
+    return view('PaginaBiologia');
+});
+
 Route::get('/Contato', function () {
     return view('Contato');
 });

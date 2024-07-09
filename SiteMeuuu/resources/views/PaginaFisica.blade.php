@@ -5,7 +5,7 @@
         <a href="/Comentarios"> < Faça seu comentario > </a>
         <a href="/Conteudos"> < Nossos conteudos > </a>
         <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a> 
-        <a href="/Avaliacao"> < Avalie-nos> </a>     
+        <a href="/Avaliacao"> < Avalie-nos> </a>  
         <a href="/Contato"> < Entre em Contato> </a>
     </div>
 
@@ -16,19 +16,21 @@
         </div>
 
     <div>
-        <h1>MATEMATICA</h1>
+        <h1>FISICA</h1>
     </div>
     <div  class="center">
-    <div class="div">
-            <img  src="https://www.youtz.com.br/wp-content/uploads/2019/10/YOUTZ-MATEMATICA-ENEM.jpg" alt="" class="hover-image" > 
-        </div>
-    </div>
-    <div class="box-materials">
+   <div class="div">
+    <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/a-fisica-uma-ciencia-basica-que-explica-as-diversas-formas-interacao-entre-materia-energia-5bf84b0fbba71.jpg" alt="" class="hover-image">
+   </div>
+   </div>
+   <div class="box-materials">
         <h1>Links de matérias mais relevantes para o ENEM</h1>
-        <a href="https://youtu.be/uIulBEk8gcM?feature=shared">Razão e proporção</a> <br>
-        <a href="https://youtu.be/XAK7m6SRLPw?feature=shared">Geometria plana </a><br>
-        <a href="https://youtu.be/Y_gD7S6OkC4?feature=shared">Geometria espacial</a>
+        <a href="https://youtu.be/f1prnafhQtE?feature=shared">Mecânica</a> <br>
+        <a href="https://youtu.be/BP0lo1zroXM?feature=shared">Eletricidade</a><br>
+        <a href="https://youtu.be/Rmgqv8ETn6o?feature=shared">Ondas</a>
 
     </div>
+
+  
+
     @endsection
-    

@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     @stack('styles')
     <style>
+.box-materials{
+  
+  margin: 10px;
+  border: solid black 3px;
+}
+.box-materials a{
+  font-size: 30px;
+}
+
+
 .container {
     margin: auto;
   }
   input[type="text"], input[type="email"], textarea {
-    width: 100%;
+    width: 23%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
+    border: solid black 2px;
   }
   button {
     padding: 10px 20px;
@@ -87,11 +98,11 @@
       padding: 10px 20px;
       font-size: 16px;
       border: none;
-      background-color: #4CAF50;
       color: white;
       cursor: pointer;
       border-radius: 5px;
       transition: background-color 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
     button:hover {
       background-color: #45a049;
@@ -135,11 +146,56 @@ ul {
 li {
   list-style: none;
 }
-#cabecalhoLogin{
-    display: grid;  
+#cabecalhoLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
     
+    margin-top: 20px;
 }
 
+#cabecalhologin1{
+        font-weight: bold;
+        border-bottom: solid black 5px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-duvidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-duvidas h2 {
+    margin-bottom: 15px;
+}
+
+.form-duvidas input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border: solid black 2px;
+    box-sizing: border-box;
+}
+
+.form-duvidas button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-duvidas button:hover {
+    background-color: #0056b3;
+}
 
 .navegacao{
     display: flex;
@@ -152,12 +208,20 @@ li {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-color: #d5f0e3;
     }
     body.dark-mode {
         background-color: #222;
-        color: #fff;
+        color: white;
     } 
 
+    body.dark-mode .navegacao a {
+      color: white;
+}
+
+.calo{
+  color: red;
+}
     .container{
         text-align: center;
     }
@@ -166,24 +230,30 @@ li {
         font-weight: bold;
         display: flex;
         margin-left: 650px;
+        color: red;
     }
 
     #btn {
+      margin-top: 10px;
+      margin-bottom: 10px; 
         margin-left: 400px;
         background-color: red;
         color: white;
         width: 150px;
+        height: 40px;
     }
 
-    #cabecalhologin1{
-        font-weight: bold;
-        border-bottom: solid black 5px;
+    #btn:hover{
+      transition: ()
     }
 
    #registro-form {
-    
-    background-color: #DAA520;
-   
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border: solid 2px;
+    height: 500px;
+    background-color: white;
+    color: black;
    }
    .botao {
      margin-top: 20px;
@@ -196,15 +266,18 @@ li {
 
     a {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 15px;
+        color: black;
     }
+
+    
 
     .cabecalhoo {
         text-align: center;
     }
 
     #pconhecimento {
-        font-size: 90px;
+        font-size: 90px;  
         font-weight: bold;
     }
 
@@ -233,6 +306,15 @@ li {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
+    border: solid black 2px;
+    }
+
+    input[type="password"] {
+    width: 25%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px
+    border: solid black;
     }
 
     .button {
@@ -302,12 +384,16 @@ li {
 h1 {
   text-align: center;
 }
-
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .div {
     border: solid purple 7px;
     text-align: center;
     width: 50%;
-    margin-left: 240px; 
+  
 }
 
 .container-display {
@@ -329,8 +415,26 @@ h1 {
 }
 
 .social-icons i:hover {
-  color: #007bff; /* Cor quando o ícone é passado com o mouse */
+  color: red; 
 }
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+        width: 97%; 
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        border: solid black 2px;
+        display: block; 
+    }
+
+    body.dark-mode .social-icons i {
+      color: white;
+}
+
+body.dark-mode .social-icons i:hover {
+   color: #007bff; 
+}
+
 </style>
 </head>
 <body>
@@ -517,6 +621,11 @@ function togglePassword() {
 function submitForm() {
       alert("Sua avaliação foi enviada, obrigado pelo feedback.");
     }
+
+    function enviarDuvida() {
+      alert("Sua dúvida foi enviada, retornaremos com uma resposta em breve!.");
+    }
+
 
 </script>
 

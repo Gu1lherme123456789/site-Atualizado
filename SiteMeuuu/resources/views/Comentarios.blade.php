@@ -5,7 +5,13 @@
         <a href="/Comentarios"> < Faça seu comentario > </a>
         <a href="/Conteudos"> < Nossos conteudos > </a>
         <a href="/Duvidas"> < Tem alguma duvida? clique aqui > </a> 
-        <a href="/Avaliacao"> < Avalie-nos > </a>     
+        <a href="/Avaliacao"> < Avalie-nos > </a>   
+        <a href="/Contato"> < Entre em Contato> </a>  
+    </div>
+
+    <div class="cabecalho">
+        <h1 id="cabecalho">CONHECIMENTOPREMIUM</h1>
+        <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
     </div>
 
     <header class="header">

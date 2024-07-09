@@ -5,7 +5,7 @@
         <a href="/Comentarios"> < Faça seu comentario > </a>
         <a href="/Conteudos"> < Nossos conteudos > </a>
         <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a> 
-        <a href="/Avaliacao"> < Avalie-nos> </a>     
+        <a href="/Avaliacao"> < Avalie-nos> </a>  
         <a href="/Contato"> < Entre em Contato> </a>
     </div>
 
@@ -16,19 +16,20 @@
         </div>
 
     <div>
-        <h1>MATEMATICA</h1>
+        <h1>BIOLOGIA</h1>
     </div>
     <div  class="center">
     <div class="div">
-            <img  src="https://www.youtz.com.br/wp-content/uploads/2019/10/YOUTZ-MATEMATICA-ENEM.jpg" alt="" class="hover-image" > 
-        </div>
+    <img src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/33a85b12-e2c8-46bf-9845-023ebdafba3b?w=200&h=200" alt="" class="hover-image">
+   </div>
     </div>
     <div class="box-materials">
         <h1>Links de matérias mais relevantes para o ENEM</h1>
-        <a href="https://youtu.be/uIulBEk8gcM?feature=shared">Razão e proporção</a> <br>
-        <a href="https://youtu.be/XAK7m6SRLPw?feature=shared">Geometria plana </a><br>
-        <a href="https://youtu.be/Y_gD7S6OkC4?feature=shared">Geometria espacial</a>
+        <a href="https://youtu.be/rjH2xzCwNx0?si=mluLvfVzUsxKjN9n">Citologia</a> <br>
+        <a href="https://youtu.be/-Vv3USW7iRU?si=sB9up8AqTto_hsot">Genética</a><br>
+        <a href="https://youtu.be/EzaSQku5Ev0?si=HB9M0WiK3TpaHahd">Fisiologia</a>
 
     </div>
+
+  
     @endsection
-    
