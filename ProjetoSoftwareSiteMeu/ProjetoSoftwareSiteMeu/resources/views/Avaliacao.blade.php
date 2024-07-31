@@ -4,9 +4,10 @@
 <div class="navegacao">
         <a href="/Comentarios"> < Faça seu comentario > </a>
         <a href="/Conteudos"> < Nossos conteudos > </a>
-        <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a> 
-        <a href="/Avaliacao"> < Avalie-nos> </a>  
-        <a href="/Contato"> < Entre em Contato> </a>   
+        <a href="/Favoritas "> < Favoritas > </a>
+        <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a>
+        <a href="/Avaliacao"> < Avalie-nos> </a>
+        <a href="/Contato"> < Entre em Contato> </a>
     </div>
 
     <div class="container">
@@ -14,13 +15,13 @@
           <h1 id="cabecalho">CONHECIMENTOPREMIUM</h1>
           <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
       </div>
-    
+
     <div class="form-container">
     <div class="form-group">
       <label for="professor">Digite o nome do professor:</label>
       <input type="text" id="professor" name="professor">
     </div>
-    
+
     <div class="form-group">
       <label for="materia">Digite a matéria que ele ensina:</label>
       <input type="text" id="materia" name="materia">
@@ -39,5 +40,5 @@
       <button type="button" onclick="submitForm()"> Avalie o conteúdo das matérias </button>
     </div>
 
-  
+
 @endsection

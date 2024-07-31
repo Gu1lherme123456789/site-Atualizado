@@ -4,27 +4,27 @@
 <div class="navegacao">
         <a href="/Comentarios"> < Faça seu comentario > </a>
         <a href="/Conteudos"> < Nossos conteudos > </a>
-        <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a> 
-        <a href="/Avaliacao"> < Avalie-nos> </a>  
+        <a href="/Favoritas "> < Favoritas > </a>
+        <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a>
+        <a href="/Avaliacao"> < Avalie-nos> </a>
         <a href="/Contato"> < Entre em Contato> </a>
     </div>
-    <div>
 
         <div class="container">
             <div class="cabecalho">
                 <h1 id="cabecalho">CONHECIMENTOPREMIUM</h1>
                 <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
             </div>
-            
+
         <h1>QUIMICA</h1>
         </div>
     <div class="center">
-      
-        
+
+
         <div class="div">
-     
+
      <img src="https://img.elo7.com.br/product/zoom/3F92882/matriz-para-bordado-simbolo-quimica-bordado-computadorizado.jpg" alt="" class="hover-image">
-     
+
     </div>
    </div>
    <div class="box-materials">

@@ -1,12 +1,13 @@
 @extends('layouts.app')
 
 @section('conteudo')
-    <div class="navegacao">
+<div class="navegacao">
         <a href="/Comentarios"> < Faça seu comentario > </a>
         <a href="/Conteudos"> < Nossos conteudos > </a>
-        <a href="/Duvidas"> < Tem alguma duvida? clique aqui > </a> 
-        <a href="/Avaliacao"> < Avalie-nos > </a>   
-        <a href="/Contato"> < Entre em Contato> </a>  
+        <a href="/Favoritas "> < Favoritas > </a>
+        <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a>
+        <a href="/Avaliacao"> < Avalie-nos> </a>
+        <a href="/Contato"> < Entre em Contato> </a>
     </div>
 
     <div class="cabecalho">

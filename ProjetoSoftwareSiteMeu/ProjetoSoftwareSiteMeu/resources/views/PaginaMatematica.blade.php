@@ -4,8 +4,9 @@
 <div class="navegacao">
         <a href="/Comentarios"> < Faça seu comentario > </a>
         <a href="/Conteudos"> < Nossos conteudos > </a>
-        <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a> 
-        <a href="/Avaliacao"> < Avalie-nos> </a>     
+        <a href="/Favoritas "> < Favoritas > </a>
+        <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a>
+        <a href="/Avaliacao"> < Avalie-nos> </a>
         <a href="/Contato"> < Entre em Contato> </a>
     </div>
 
@@ -20,7 +21,7 @@
     </div>
     <div  class="center">
     <div class="div">
-            <img  src="https://www.youtz.com.br/wp-content/uploads/2019/10/YOUTZ-MATEMATICA-ENEM.jpg" alt="" class="hover-image" > 
+            <img  src="https://www.youtz.com.br/wp-content/uploads/2019/10/YOUTZ-MATEMATICA-ENEM.jpg" alt="" class="hover-image" >
         </div>
     </div>
     <div class="box-materials">
@@ -31,4 +32,3 @@
 
     </div>
     @endsection
-    

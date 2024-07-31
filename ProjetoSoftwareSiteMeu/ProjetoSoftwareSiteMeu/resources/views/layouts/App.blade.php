@@ -8,7 +8,7 @@
     @stack('styles')
     <style>
 .box-materials{
-  
+
   margin: 10px;
   border: solid black 3px;
 }
@@ -136,8 +136,8 @@
 .materias{
     font-size: 30px;
     font-weight: 700;
-    color: gray; 
-    
+    color: gray;
+
 }
 
 ul {
@@ -151,8 +151,8 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  
-    
+
+
     margin-top: 20px;
 }
 
@@ -213,7 +213,7 @@ li {
     body.dark-mode {
         background-color: #222;
         color: white;
-    } 
+    }
 
     body.dark-mode .navegacao a {
       color: white;
@@ -235,7 +235,7 @@ li {
 
     #btn {
       margin-top: 10px;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
         margin-left: 400px;
         background-color: red;
         color: white;
@@ -262,7 +262,7 @@ li {
      border-radius: 30px;
    }
 
-   
+
 
     a {
         text-decoration: none;
@@ -270,14 +270,14 @@ li {
         color: black;
     }
 
-    
+
 
     .cabecalhoo {
         text-align: center;
     }
 
     #pconhecimento {
-        font-size: 90px;  
+        font-size: 90px;
         font-weight: bold;
     }
 
@@ -367,18 +367,18 @@ li {
 .image-container {
   position: relative;
   overflow: hidden;
- 
+
 }
 
 .hover-image {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 
   height: 440px;
   width: 100%;
 }
 
 .hover-image:hover {
-  transform: translateY(-20px); 
+  transform: translateY(-20px);
 }
 
 h1 {
@@ -393,7 +393,7 @@ h1 {
     border: solid purple 7px;
     text-align: center;
     width: 50%;
-  
+
 }
 
 .container-display {
@@ -415,16 +415,16 @@ h1 {
 }
 
 .social-icons i:hover {
-  color: red; 
+  color: red;
 }
 
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
-        width: 97%; 
+        width: 97%;
         margin: 10px;
         border: 1px solid #ddd;
         border-radius: 5px;
         border: solid black 2px;
-        display: block; 
+        display: block;
     }
 
     body.dark-mode .social-icons i {
@@ -432,7 +432,58 @@ h1 {
 }
 
 body.dark-mode .social-icons i:hover {
-   color: #007bff; 
+   color: #007bff;
+}
+
+/* favoritas */
+li.mts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+.materias {
+    text-decoration: none;
+    color: #000;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.favoritar {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: red;
+    margin-left: 10px;
+    color: white;
+}
+.favoritar:hover {
+    background-color: green;
+    color: black;
+}
+.desfavoritar {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: green;
+    margin-left: 10px;
+   color: black;
+}
+.desfavoritar:hover {
+    background-color: red;
+    color: white;
+}
+.coracao_icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.coracao_icon.favorited {
+    color: black;
+}
+.coracao_icon.not-favorited {
+    color: black;
 }
 
 </style>
@@ -443,7 +494,7 @@ body.dark-mode .social-icons i:hover {
 </main>
 
 <script>
- 
+
  document.getElementById('contactForm').onsubmit = function(event) {
     event.preventDefault();
     var name = document.getElementById('name').value;
@@ -463,19 +514,19 @@ function search_animal() {
     let input = document.getElementById('searchbar').value
     input=input.toLowerCase();
     let x = document.getElementsByClassName('materias');
-      
-    for (i = 0; i < x.length; i++) { 
+
+    for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display="none";
         }
         else {
-            x[i].style.display="list-item";                 
+            x[i].style.display="list-item";
         }
     }
-}   
+}
 
 var stars = document.querySelectorAll('.star-icon');
-                  
+
 document.addEventListener('click', function(e){
   var classStar = e.target.classList;
   if(!classStar.contains('ativo')){
@@ -514,7 +565,7 @@ alert("E-mail invalido");
 function toggleMode() {
     const body = document.body;
     const currentMode = body.classList.contains('dark-mode') ? 'dark' : 'light';
-    
+
     if (currentMode === 'dark') {
       body.classList.remove('dark-mode');
     } else {
@@ -625,6 +676,46 @@ function submitForm() {
     function enviarDuvida() {
       alert("Sua dúvida foi enviada, retornaremos com uma resposta em breve!.");
     }
+
+    function favoritar(button) {
+    const materia = button.previousElementSibling.textContent.trim();
+    const heartIcon = button.querySelector('.coracao_icon');
+
+    // Preencher o coração e mudar a cor para verde
+    heartIcon.textContent = '♥';
+    heartIcon.classList.add('favorited');
+
+    // Obter as matérias favoritas existentes do localStorage
+    let favoritas = JSON.parse(localStorage.getItem('materiasFavoritas')) || [];
+
+    // Adicionar a nova matéria à lista de favoritas, se ainda não estiver na lista
+    if (!favoritas.includes(materia)) {
+        favoritas.push(materia);
+    }
+
+    // Armazenar a lista atualizada no localStorage
+    localStorage.setItem('materiasFavoritas', JSON.stringify(favoritas));
+
+    // Redirecionar para a página de favoritas
+    window.location.href = '/Favoritas';
+}
+
+function desfavoritar(button) {
+    const materia = button.previousElementSibling.previousElementSibling.textContent.trim();
+    const heartIcon = button.querySelector('.coracao_icon');
+
+    // Remove a matéria do localStorage
+    let favoritas = JSON.parse(localStorage.getItem('materiasFavoritas')) || [];
+    favoritas = favoritas.filter(item => item !== materia);
+    localStorage.setItem('materiasFavoritas', JSON.stringify(favoritas));
+
+      // Preencher o coração e mudar a cor para verde
+      heartIcon.textContent = '♥';
+      heartIcon.classList.add('desfavorited');
+
+    // Redirecionar para a página de favoritas
+    window.location.href = '/Favoritas';
+}
 
 
 </script>

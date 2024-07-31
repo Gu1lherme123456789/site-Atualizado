@@ -65,6 +65,10 @@ Route::get('/PaginaBiologia', function () {
     return view('PaginaBiologia');
 });
 
+Route::get('/Favoritas', function () {
+    return view('Favoritas');
+});
+
 Route::get('/Contato', function () {
     return view('Contato');
 });
