@@ -8,6 +8,8 @@
         <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a>
         <a href="/Avaliacao"> < Avalie-nos> </a>
         <a href="/Contato"> < Entre em Contato> </a>
+        <a href="/Calendario"> <(VIP: Agende sua aula ao vivo)> </a>
+        <a href="/Sobre"> < Sobre Nós> </a>
     </div>
 
 <div class="container">
@@ -17,7 +19,7 @@
         </div>
 
         <div id="cabecalhoLogin">
-                <h1 id="cabecalhoLogin1">Pagina de Dúvidas</h1>
+                <h1 id="cabecalhoLogin1">Escreva sua(s) Dúvida(s) aqui</h1>
                 <form action="" class="form-duvidas">
                     <h2>Informe sua dúvida</h2>
                     <input type="text" id="duvida-input" placeholder="DIGITE SUA DÚVIDA" required="required">

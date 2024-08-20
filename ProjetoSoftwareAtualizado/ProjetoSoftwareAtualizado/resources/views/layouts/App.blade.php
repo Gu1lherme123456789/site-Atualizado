@@ -16,6 +16,21 @@
   font-size: 30px;
 }
 
+.h1Sobre{
+  color: #fc0fc0;
+}
+
+.h2Nosso {
+  border:solid 4px black;
+  border: solid 4px rgb(100, 100, 100);
+  text-align: center;
+  align-items:center;
+}
+
+.h2Nosso:hover{
+  border: solid 4px rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 .container {
     margin: auto;
@@ -486,6 +501,60 @@ li.mts {
     color: black;
 }
 
+/* Calendario */
+
+.calendario-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilo para os títulos */
+.calendario-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.calendario-section h1 {
+    font-size: 2.4em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.calend-group,
+.calendMa-group {
+    margin-bottom: 15px;
+}
+
+.calend-group label,
+.calendMa-group label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.calend-group input,
+.calendMa-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+
+
 </style>
 </head>
 <body>
@@ -716,6 +785,10 @@ function desfavoritar(button) {
     // Redirecionar para a página de favoritas
     window.location.href = '/Favoritas';
 }
+
+function enviarCalendario() {
+      alert("Sua solicitação de marcação de aula ao vivo foi enviado, aguardaremos a resposta dos professores.");
+    }
 
 
 </script>

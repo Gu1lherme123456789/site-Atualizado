@@ -9,6 +9,8 @@
         <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a>
         <a href="/Avaliacao"> < Avalie-nos> </a>
         <a href="/Contato"> < Entre em Contato> </a>
+        <a href="/Calendario"> < (VIP: Agende sua aula ao vivo) > </a>
+        <a href="/Sobre"> < Sobre Nós> </a>
     </div>
 
     <div class="container">

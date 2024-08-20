@@ -73,3 +73,12 @@ Route::get('/Contato', function () {
     return view('Contato');
 });
 
+Route::get('/Calendario', function () {
+    return view('Calendario');
+});
+
+
+Route::get('/Sobre', function () {
+    return view('Sobre');
+});
+

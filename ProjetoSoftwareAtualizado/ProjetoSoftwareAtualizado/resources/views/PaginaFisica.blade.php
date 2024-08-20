@@ -8,6 +8,8 @@
         <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a>
         <a href="/Avaliacao"> < Avalie-nos> </a>
         <a href="/Contato"> < Entre em Contato> </a>
+        <a href="/Calendario"> < (VIP: Agende sua aula ao vivo) > </a>
+        <a href="/Sobre"> < Sobre Nós> </a>
     </div>
 
     <div class="container">
@@ -17,20 +19,21 @@
         </div>
 
     <div>
-        <h1>BIOLOGIA</h1>
+        <h1>FISICA</h1>
     </div>
     <div  class="center">
-    <div class="div">
-    <img src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/33a85b12-e2c8-46bf-9845-023ebdafba3b?w=200&h=200" alt="" class="hover-image">
+   <div class="div">
+    <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/a-fisica-uma-ciencia-basica-que-explica-as-diversas-formas-interacao-entre-materia-energia-5bf84b0fbba71.jpg" alt="" class="hover-image">
    </div>
-    </div>
-    <div class="box-materials">
+   </div>
+   <div class="box-materials">
         <h1>Links de matérias mais relevantes para o ENEM</h1>
-        <a href="https://youtu.be/rjH2xzCwNx0?si=mluLvfVzUsxKjN9n">Citologia</a> <br>
-        <a href="https://youtu.be/-Vv3USW7iRU?si=sB9up8AqTto_hsot">Genética</a><br>
-        <a href="https://youtu.be/EzaSQku5Ev0?si=HB9M0WiK3TpaHahd">Fisiologia</a>
+        <a href="https://youtu.be/f1prnafhQtE?feature=shared">Mecânica</a> <br>
+        <a href="https://youtu.be/BP0lo1zroXM?feature=shared">Eletricidade</a><br>
+        <a href="https://youtu.be/Rmgqv8ETn6o?feature=shared">Ondas</a>
 
     </div>
+
 
 
     @endsection
