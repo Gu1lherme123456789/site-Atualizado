@@ -35,6 +35,5 @@
         <a href="https://youtu.be/d6kS7zj8p2Q?feature=shared">Funções da linguagem</a>
 
     </div>
-
-
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
     @endsection

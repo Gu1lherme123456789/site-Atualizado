@@ -1,53 +1,45 @@
-@extends('layouts.app')
 
-@section('conteudo')
-<div class="navegacao">
-        <a href="/Comentarios"> < Faça seu comentario > </a>
-        <a href="/Conteudos"> < Nossos conteudos > </a>
-        <a href="/Favoritas "> < Favoritas > </a>
-        <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a>
-        <a href="/Avaliacao"> < Avalie-nos> </a>
-        <a href="/Contato"> < Entre em Contato> </a>
-        <a href="/Calendario"> < (VIP: Agende sua aula ao vivo) > </a>
-        <a href="/Sobre"> < Sobre Nós> </a>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ asset('css/comentarios.css') }}" rel="stylesheet" type="text/css"/>
+    <title>Comentário em HTML e JavaScript</title>
+   
+</head>
+<body>
+    <div class="navegacao">
+        <a href="/Comentarios"> Faça seu comentario </a>
+        <a href="/Conteudos"> Nossos conteudos </a>
+        <a href="/Favoritas "> Favoritas </a>
+        <a href="/Duvidas"> Tem alguma duvida? clique aqui </a>
+        <a href="/Avaliacao"> Avalie-nos </a>
+        <a href="/Contato"> Entre em Contato </a>
+        <a href="/Calendario"> VIP: Agende sua aula ao vivo </a>
+        <a href="/Sobre">   Sobre Nós </a>
     </div>
 
-    <div class="cabecalho">
-        <h1 id="cabecalho">CONHECIMENTOPREMIUM</h1>
-        <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
-    </div>
-
-    <header class="header">
-        <hr>
-        <h1>
-            Coloque aqui seus comentarios
-        </h1>
-    </header>
-    <section class="section">
-        <form id="commentForm">
-            <div>
-                <label for="nome" class="label">Nome:</label>
-                <input type="text" id="nome" required class="input">
+    <div class="container">
+            <div class="cabecalho">
+            <div class="title-container">
+                <h1 id="cabecalho">CONHECIMENTOPREMIUM</h1>
             </div>
-            <div>
-                <label for="comentario" class="label">Comente algo:</label>
-                <input type="text" id="comentario" required class="input">
-                <button type="submit" class="button">Enviar</button>
+                <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
             </div>
-        </form>
-
-        <div class="tabela" id="tabela">
-            <br><br>
-            <table border="0">
-                <thead>
-                    <tr>
-                        <th>Autor</th>
-                        <th>Comentário</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody id="comentariosList"></tbody>
-            </table>
+    <div class="comentarios-container">
+        <h1>Comentários</h1>
+        
+        <div id="novo-comentario">
+            <textarea id="texto-comentario" rows="4" placeholder="Digite seu comentário..."></textarea>
+            <button onclick="adicionarComentario()">Postar Comentário</button>
         </div>
-    </section>
-@endsection
+        
+        <div id="comentarios">
+            <!-- Comentários serão exibidos aqui -->
+        </div>
+    </div>
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
+     <script src="{{ asset('js/comentarios.js') }}"></script>  
+</body>
+</html>
+

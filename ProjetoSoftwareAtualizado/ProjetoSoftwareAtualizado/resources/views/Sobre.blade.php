@@ -27,4 +27,5 @@
                 Uma foto de nosso grupo:
             </h2>
         </div>
+        <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
 @endsection

@@ -33,6 +33,6 @@
         <a href="https://youtu.be/EzaSQku5Ev0?si=HB9M0WiK3TpaHahd">Fisiologia</a>
 
     </div>
-
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
 
     @endsection

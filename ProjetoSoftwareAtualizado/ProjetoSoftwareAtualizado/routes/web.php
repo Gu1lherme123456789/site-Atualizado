@@ -82,3 +82,11 @@ Route::get('/Sobre', function () {
     return view('Sobre');
 });
 
+Route::get('/TermosdeUso', function () {
+    return view('TermosdeUso');
+});
+
+Route::get('/Professores', function () {
+    return view('Professores');
+});
+

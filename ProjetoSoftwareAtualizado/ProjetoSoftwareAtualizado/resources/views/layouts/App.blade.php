@@ -161,21 +161,6 @@ ul {
 li {
   list-style: none;
 }
-#cabecalhoLogin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-
-    margin-top: 20px;
-}
-
-#cabecalhologin1{
-        font-weight: bold;
-        border-bottom: solid black 5px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
 
     .form-duvidas {
     display: flex;
@@ -212,12 +197,6 @@ li {
     background-color: #0056b3;
 }
 
-.navegacao{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: solid 3px purple;
-}
-
 
   body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -234,12 +213,6 @@ li {
       color: white;
 }
 
-.calo{
-  color: red;
-}
-    .container{
-        text-align: center;
-    }
 
     .cabecalho{
         font-weight: bold;
@@ -262,14 +235,7 @@ li {
       transition: ()
     }
 
-   #registro-form {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    border: solid 2px;
-    height: 500px;
-    background-color: white;
-    color: black;
-   }
+  
    .botao {
      margin-top: 20px;
      font-size: 30px;
@@ -379,12 +345,6 @@ li {
 
     /* fdeefe */
 
-.image-container {
-  position: relative;
-  overflow: hidden;
-
-}
-
 .hover-image {
   transition: transform 0.3s ease;
 
@@ -409,13 +369,6 @@ h1 {
     text-align: center;
     width: 50%;
 
-}
-
-.container-display {
-  width: 100%;
-  background-color: skyblue;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
 }
 
 .social-icons {
@@ -553,6 +506,10 @@ form {
     font-size: 1em;
 }
 
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
 
 
 </style>

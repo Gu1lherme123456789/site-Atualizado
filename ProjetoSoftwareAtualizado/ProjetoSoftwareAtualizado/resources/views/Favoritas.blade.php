@@ -46,4 +46,6 @@
         listaFavoritas.textContent = 'Nenhuma matéria favoritada ainda.';
     }
 </script>
+
+<a class="usos" href="/TermosdeUso"> Termos de Uso </a>
 @endsection

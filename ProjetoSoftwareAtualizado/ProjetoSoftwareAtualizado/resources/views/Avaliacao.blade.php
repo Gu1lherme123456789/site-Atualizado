@@ -41,6 +41,6 @@
     <div class="button-container">
       <button type="button" onclick="submitForm()"> Avalie o conteúdo das matérias </button>
     </div>
-
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
 
 @endsection

@@ -1,0 +1,122 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5f0e3;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navegacao a {
+  color: white;
+}
+
+.navegacao{
+    background-color: rgb(255, 147, 147);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px purple;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container{
+    text-align: center;
+}
+
+.container-display {
+    width: 100%;
+    background-color: skyblue;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#cabecalhoLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cabecalho{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+    
+}
+
+.materias {
+    text-decoration: none;
+    color: #000;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#cabecalhologin1{
+    font-weight: bold;
+    border-bottom: solid black 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#registro-form {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border: solid 2px;
+    height: 500px;
+    background-color: white;
+    color: black;
+}
+
+.calo{
+    color: red;
+}
+
+#btn{
+    background-color: rgb(64, 230, 241);
+    font-weight: bold;
+}
+
+#btn:hover{
+    background-color: rgb(0, 238, 255);
+}
+
+.botao{
+    margin-top: 110px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 20px; 
+    background-color: rgb(0, 172, 0);
+    width: 70%;
+}
+
+.botao:hover {
+    background-color: rgb(0, 255, 0);
+}
+  
+.title-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;    
+}
+
+.toggle-password{
+    border: solid 1px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#passwordField{
+    margin-left: 5px;
+}

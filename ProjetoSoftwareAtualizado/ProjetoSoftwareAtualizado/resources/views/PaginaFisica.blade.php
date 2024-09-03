@@ -33,7 +33,7 @@
         <a href="https://youtu.be/Rmgqv8ETn6o?feature=shared">Ondas</a>
 
     </div>
-
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
 
 
     @endsection

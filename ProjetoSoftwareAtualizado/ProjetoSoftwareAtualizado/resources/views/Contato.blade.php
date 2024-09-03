@@ -2,14 +2,15 @@
 
 @section('conteudo')
 <div class="navegacao">
-        <a href="/Comentarios"> < Faça seu comentario > </a>
-        <a href="/Conteudos"> < Nossos conteudos > </a>
-        <a href="/Favoritas "> < Favoritas > </a>
-        <a href="/Duvidas"> < Tem alguma duvida? clique aqui> </a>
+        <a href="/Comentarios"> Faça seu comentario </a>
+        <a href="/Conteudos"> Nossos conteudos </a>
+        <a href="/Favoritas "> Favoritas </a>
+        <a href="/Duvidas"> < Tem alguma duvida? clique aqui </a>
         <a href="/Avaliacao"> < Avalie-nos> </a>
-        <a href="/Contato"> < Entre em Contato> </a>
-        <a href="/Calendario"> < (VIP: Agende sua aula ao vivo) > </a>
-        <a href="/Sobre"> < Sobre Nós> </a>
+        <a href="/Contato"> Entre em Contato </a>
+        <a href="/Calendario"> VIP: Agende sua aula ao vivo </a>
+        <a href="/Sobre"> Sobre Nós </a>
+        <a href="/TermosdeUso"> Termos de Uso </a>
     </div>
 
 <div class="cabecalho">
@@ -33,4 +34,5 @@
     <i class="fab fa-linkedin-in"></i>
   </div>
 </div>
+<a class="usos" href="/TermosdeUso"> Termos de Uso </a>
 @endsection

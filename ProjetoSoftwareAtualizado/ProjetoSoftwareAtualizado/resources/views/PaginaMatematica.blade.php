@@ -33,4 +33,5 @@
         <a href="https://youtu.be/Y_gD7S6OkC4?feature=shared">Geometria espacial</a>
 
     </div>
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
     @endsection

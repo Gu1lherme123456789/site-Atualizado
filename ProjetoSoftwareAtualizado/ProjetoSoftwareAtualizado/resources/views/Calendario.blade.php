@@ -51,6 +51,6 @@
         </div>
         <button type="submit" onclick="enviarCalendario()">Enviar</button>
     </form>
-
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
 </div>
 @endsection

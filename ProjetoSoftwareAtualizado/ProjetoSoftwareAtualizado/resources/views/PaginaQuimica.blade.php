@@ -36,5 +36,5 @@
         <a href="https://youtu.be/-RU1ywag0Dg?feature=shared">Eletroquímica</a>
 
     </div>
-
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
     @endsection

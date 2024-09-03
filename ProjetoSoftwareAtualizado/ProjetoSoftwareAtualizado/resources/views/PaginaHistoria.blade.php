@@ -34,7 +34,7 @@
 
     </div>
 
-
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
     @endsection
 
 

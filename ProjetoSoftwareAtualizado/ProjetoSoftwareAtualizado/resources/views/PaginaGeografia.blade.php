@@ -33,6 +33,6 @@
         <a href="https://youtu.be/hbzAvNTJof4?si=oJqcD5CsGt2FGmir">Climas do Brasil</a>
 
     </div>
-
+    <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
 
     @endsection
