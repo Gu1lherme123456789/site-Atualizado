@@ -17,6 +17,7 @@
         <a href="/Contato"> Entre em Contato </a>
         <a href="/Calendario"> VIP: Agende sua aula ao vivo </a>
         <a href="/Sobre">   Sobre Nós </a>
+        <a href="/Professores"> Professores </a>
     </div>
 
     <div class="container">
@@ -39,7 +40,7 @@
         </div>
     </div>
     <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
-     <script src="{{ asset('js/comentarios.js') }}"></script>  
+    <script src="{{ asset('js/comentarios.js') }}"></script>  
 </body>
 </html>
 

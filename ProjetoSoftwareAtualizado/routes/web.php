@@ -90,3 +90,10 @@ Route::get('/Professores', function () {
     return view('Professores');
 });
 
+Route::get('/PaginaIngles', function () {
+    return view('PaginaIngles');
+});
+
+Route::get('/PaginaEspanhol', function () {
+    return view('PaginaEspanhol');
+});

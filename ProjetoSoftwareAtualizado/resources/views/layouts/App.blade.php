@@ -342,7 +342,6 @@ li {
     background-color: #df382c;
     }
 
-
     /* fdeefe */
 
 .hover-image {
@@ -361,6 +360,7 @@ h1 {
 }
 .center{
   display: flex;
+  
   align-items: center;
   justify-content: center;
 }

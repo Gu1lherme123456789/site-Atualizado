@@ -125,7 +125,28 @@
                         <i class="coracao_icon">🤍</i> Desfavoritar
                     </button>
                     </div>
-                    
+                    <div class="mmm">
+                <li class="mts">
+                    <a href="/PaginaIngles" class="materias">Inglês</a>
+                    <div class="button-container">
+                    <button type="button" class="favoritar" onclick="favoritar(this)">
+                        <i class="coracao_icon">🖤</i> Favoritar
+                    </button>
+                    <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
+                        <i class="coracao_icon">🤍</i> Desfavoritar
+                    </button>
+                    </div>
+                    <div class="mmm">
+                <li class="mts">
+                    <a href="/PaginaEspanhol" class="materias">Espanhol</a>
+                    <div class="button-container">
+                    <button type="button" class="favoritar" onclick="favoritar(this)">
+                        <i class="coracao_icon">🖤</i> Favoritar
+                    </button>
+                    <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
+                        <i class="coracao_icon">🤍</i> Desfavoritar
+                    </button>
+                    </div>
                 </div>
                 </li>
                 </div>

@@ -1,12 +1,17 @@
-@extends('layouts.app')
-
-@section('conteudo')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ asset('css/contato.css') }}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
 <div class="navegacao">
         <a href="/Comentarios"> Faça seu comentario </a>
         <a href="/Conteudos"> Nossos conteudos </a>
         <a href="/Favoritas "> Favoritas </a>
-        <a href="/Duvidas"> < Tem alguma duvida? clique aqui </a>
-        <a href="/Avaliacao"> < Avalie-nos> </a>
+        <a href="/Duvidas"> Tem alguma duvida? clique aqui </a>
+        <a href="/Avaliacao"> Avalie-nos </a>
         <a href="/Contato"> Entre em Contato </a>
         <a href="/Calendario"> VIP: Agende sua aula ao vivo </a>
         <a href="/Sobre"> Sobre Nós </a>
@@ -35,4 +40,6 @@
   </div>
 </div>
 <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
-@endsection
+<script src="{{ asset('js/contato.js') }}"></script>  
+</body>
+</html>
