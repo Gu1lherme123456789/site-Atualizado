@@ -1,0 +1,82 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5f0e3;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navegacao a {
+    color: white;
+}
+
+.navegacao {
+    background-color: rgb(255, 147, 147);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px purple;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-display {
+    width: 100%;
+    background-color: skyblue;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.pouco {
+    font-size: 36px;
+    color: blue;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+h2:hover {
+    border: solid 2px black;
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 br {
+    margin-bottom: 10px;
+}
+
+.usos {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+body.dark-mode .usos{
+    color: white;
+}
+
+

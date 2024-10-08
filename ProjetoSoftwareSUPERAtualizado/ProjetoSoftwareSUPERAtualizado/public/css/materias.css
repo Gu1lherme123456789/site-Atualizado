@@ -1,0 +1,139 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5f0e3;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navegacao a {
+    color: white;
+}
+
+.navegacao {
+    background-color: rgb(255, 147, 147);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px purple;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-display {
+    width: 100%;
+
+}
+
+.title-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.mmm{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.container{
+    text-align: center;
+}
+
+.materias {
+
+    list-style: none;
+}
+
+#searchbar{
+    margin-top: 30px;
+    width: 50vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.mts{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+body.dark-mode .mts a{
+    color: white;
+}
+
+.favoritar {
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: rgb(0, 225, 255);
+    margin-left: 10px;
+    justify-content: center;
+
+}
+
+.favoritar:hover {
+    background-color: rgb(88, 226, 250);
+    color: rgb(13, 31, 11);
+}
+
+.desfavoritar {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: rgb(252, 69, 69);
+    margin-left: 10px;
+    justify-content: center;
+    color: black;
+}
+
+.desfavoritar:hover {
+    background-color: red;
+    color: white;
+}
+
+.coracao_icon {
+    font-size: 20px;
+}
+
+.coracao_icon.favorited {
+    color: black;
+}
+
+.coracao_icon.not-favorited {
+    color: black;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+

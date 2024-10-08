@@ -1,0 +1,109 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5f0e3;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navegacao a {
+    color: white;
+}
+
+.navegacao {
+    background-color: rgb(255, 147, 147);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px purple;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-display {
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.cabecalho {
+    align-items: center;
+}
+
+
+#cabecalhoLogin {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#cabecalhoLogin1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-duvidas {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input[type="text"] {
+    width: calc(100%);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.btnDuvidas {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.usos {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+body.dark-mode .usos{
+    color: white;
+}

@@ -1,0 +1,127 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5f0e3;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navegacao a {
+    color: white;
+}
+
+.navegacao {
+    background-color: rgb(255, 147, 147);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px purple;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-display {
+    width: 100%;
+    background-color: skyblue;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.calendario-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.vip{
+    color: black;
+    text-align: center;
+}
+
+.calend{
+    color: black;
+}
+
+
+.calend-group, .calendMa-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.calend-group,
+.calendMa-group {
+    margin-bottom: 15px;
+}
+
+.calend-group label,
+.calendMa-group label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.calend-group input,
+.calendMa-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+.btnAula{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.usos {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+body.dark-mode .usos{
+    color: white;
+}
