@@ -8,12 +8,11 @@
 </head>
 <body>
     <div class="navegacao">
-        <a href="/Comentarios"> Faça seu comentário </a>
-        <a href="/Conteudos"> Nossos conteúdos </a>
-        <a href="/Duvidas"> Tem alguma dúvida? Clique aqui </a>
+        <a href="/Comentarios">  Comente algo  </a>
+        <a href="/Materias"> Matérias </a>
+        <a href="/Duvidas"> Informe sua dúvida para nós </a>
         <a href="/Avaliacao"> Avalie-nos </a>
         <a href="/Contato"> Entre em Contato </a>
-        <a href="/Sobre"> Sobre Nós </a>
     </div>
 
     <div class="container">

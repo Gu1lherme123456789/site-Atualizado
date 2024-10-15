@@ -19,7 +19,7 @@ body.dark-mode .navegacao a {
     height: 50px;
     display: flex;
     align-items: center;
-    border-bottom: solid 3px purple;
+    border-bottom: solid 3px black;
     justify-content: space-around;
 }
 
@@ -27,6 +27,7 @@ a {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
+    color: #551a88;
 }
 
 .cabecalho {
@@ -40,54 +41,85 @@ a {
 
 .container-display {
     width: 100%;
+    background-color: skyblue;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
 }
 
-.cabecalho {
-    align-items: center;
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+}
+
+body.dark-mode .toggle-password {
+    color: black;
 }
 
 
-#cabecalhoLogin {
-    width: 100%;
-    max-width: 700px;
+#registro_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
     margin: 0 auto;
-    margin-top: 20px;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#cabecalhoLogin1 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.form-duvidas {
-    max-width: 600px;
-    margin: 0 auto;
+.cabcad{
+    color: black;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.form-group input[type="text"] {
-    width: calc(100%);
-    padding: 12px;
+label {
+    display: block;
+    margin-bottom: 5px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: 10px;
-    transition: border-color 0.3s ease;
 }
 
-.btnDuvidas {
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.btnCadastro {
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     background-color: #4CAF50;

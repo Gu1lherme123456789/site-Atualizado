@@ -24,13 +24,10 @@
                 <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
             </div>
     <div class="comentarios-container">
-        <h1>Comentários</h1>
-
         <div id="novo-comentario">
             <textarea id="texto-comentario" rows="4" placeholder="Digite seu comentário..."></textarea>
             <button onclick="adicionarComentario()">Postar Comentário</button>
         </div>
-
         <div id="comentarios">
             <!-- Comentários serão exibidos aqui -->
         </div>

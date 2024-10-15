@@ -35,7 +35,7 @@
         <label for="message">Insira sua mensagem:</label>
         <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
       </div>
-      <button type="submit" class="btnContato">Enviar</button>
+      <button onclick="enviarContato()" type="submit" class="btnContato">Enviar</button>
     </form>
     <h1 class="nrr">Nos encontre nessas redes sociais:</h1>
 <div class="social-icons">
