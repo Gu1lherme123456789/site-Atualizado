@@ -1,0 +1,110 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5f0e3;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navegacao a {
+    color: white;
+}
+
+.navegacao {
+    background-color: rgb(255, 147, 147);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px black;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    padding: 0 15px;
+    position: relative;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.navegacao a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    height: 57px;
+    width: 2px;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+.cabecalho {
+    align-items: center;
+}
+
+.toggle-btn {
+    margin-top: 10px;
+    background-color: #c2b741;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #968e37;
+}
+
+.pouco {
+    font-size: 36px;
+    color: blue;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+h2:hover {
+    border: solid 2px black;
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.usos {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+body.dark-mode .usos{
+    color: white;
+}
+
+

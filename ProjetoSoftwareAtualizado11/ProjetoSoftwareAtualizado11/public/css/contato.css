@@ -1,0 +1,164 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5f0e3;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navegacao a {
+    color: white;
+}
+
+.navegacao {
+    background-color: rgb(255, 147, 147);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px black;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    padding: 0 15px;
+    position: relative;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.navegacao a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    height: 57px;
+    width: 2px;
+    background-color: black;
+}
+
+.cont {
+    text-align: center;
+}
+
+.cabecalho {
+    align-items: center;
+}
+
+.toggle-btn {
+    margin-top: 10px;
+    background-color: #c2b741;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #968e37;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: black;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.btnContato {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btnContato:hover {
+    background-color: #45a049;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons i {
+    font-size: 40px;
+    margin: 0 20px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #0056b3;
+}
+
+body.dark-mode .social-icons i {
+    color: #ff0000;
+}
+
+body.dark-mode .social-icons i:hover {
+    color: #cc0000;
+}
+
+.usos {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+body.dark-mode .usos{
+    color: white;
+}

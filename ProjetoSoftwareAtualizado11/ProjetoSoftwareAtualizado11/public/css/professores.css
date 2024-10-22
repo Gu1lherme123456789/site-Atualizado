@@ -1,0 +1,130 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5f0e3;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navegacao a {
+    color: white;
+}
+
+.navegacao {
+    background-color: rgb(255, 147, 147);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px black;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    padding: 0 15px;
+    position: relative;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.navegacao a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    height: 57px;
+    width: 2px;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+.cabecalho {
+    align-items: center;
+}
+
+.toggle-btn {
+    margin-top: 10px;
+    background-color: #c2b741;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #968e37;
+}
+
+.professores {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.professor-perfil {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 450px;
+    text-align: center;
+}
+
+.professor-imagem {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+}
+
+.professor-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 13px solid black;
+    box-sizing: border-box;
+}
+
+.professor-nome, .professor-materia {
+    color: black;
+}
+
+.professor-destaque {
+    color: #03bb85;
+}
+
+h2 {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.usos {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+body.dark-mode .usos{
+    color: white;
+}
+
+
