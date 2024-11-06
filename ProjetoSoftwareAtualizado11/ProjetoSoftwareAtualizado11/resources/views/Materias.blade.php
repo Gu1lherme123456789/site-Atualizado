@@ -23,7 +23,7 @@
         <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
     </div>
 
-    <input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="pesquisar matéria" autocomplete="off">
+    <input id="searchbar" onkeyup="search_materia()" type="text" name="search" placeholder="pesquisar matéria" autocomplete="off">
 
     <div class="image-container">
         <h1> Matérias disponíveis no nosso site:</h1>

@@ -9,7 +9,7 @@ function toggleMode() {
     }
   }
 
-function search_animal() {
+function search_materia() {
     let input = document.getElementById('searchbar').value
     input=input.toLowerCase();
     let x = document.getElementsByClassName('materias');

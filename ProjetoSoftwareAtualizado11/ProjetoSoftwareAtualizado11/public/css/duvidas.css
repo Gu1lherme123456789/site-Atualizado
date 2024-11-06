@@ -2,7 +2,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d5f0e3;
+    background-color: white;
 }
 
 body.dark-mode {
@@ -15,16 +15,16 @@ body.dark-mode .navegacao a {
 }
 
 .navegacao {
-    background-color: rgb(255, 147, 147);
+    background-color:  rgb(68, 68, 68);
     height: 50px;
     display: flex;
     align-items: center;
-    border-bottom: solid 3px black;
     justify-content: space-between;
     padding: 0 20px;
 }
 
 .navegacao a {
+  color: white;
     text-decoration: none;
     padding: 0 15px;
     position: relative;
@@ -33,7 +33,6 @@ body.dark-mode .navegacao a {
 }
 
 .navegacao a:not(:last-child)::after {
-    content: "";
     position: absolute;
     right: -10px;
     top: -20px;
@@ -47,6 +46,8 @@ body.dark-mode .navegacao a {
 }
 
 .cabecalho {
+  display: flex;
+  flex-direction: column;
     align-items: center;
 }
 
@@ -162,3 +163,19 @@ body.dark-mode .navegacao a {
 body.dark-mode .usos{
     color: white;
 }
+
+.imgPremium{
+  width:  200px;
+  height: 150px;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }

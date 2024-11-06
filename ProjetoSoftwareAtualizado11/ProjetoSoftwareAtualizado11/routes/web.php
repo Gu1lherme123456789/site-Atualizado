@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('Login');
+    return view('inicialPage');
 });
 
 Route::get('/Comentarios', function () {

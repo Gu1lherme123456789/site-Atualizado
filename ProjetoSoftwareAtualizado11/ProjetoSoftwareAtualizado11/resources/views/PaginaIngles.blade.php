@@ -21,7 +21,7 @@
         <h1>PREMIUM KNOWLEDGE</h1>
         <button class="toggle-btn" onclick="toggleMode()" id="btn">Change background</button>
     </div>
-
+    
     <div>
         <h1>ENGLISH</h1>
     </div>
