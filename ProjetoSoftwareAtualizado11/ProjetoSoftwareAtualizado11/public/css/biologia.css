@@ -1,10 +1,19 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #d5f0e3;
+    box-sizing: border-box;
 }
 
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo escuro */
 body.dark-mode {
     background-color: #222;
     color: white;
@@ -14,106 +23,232 @@ body.dark-mode .navegacao a {
     color: white;
 }
 
+body.dark-mode .box-materials a {
+    color: #ddd;
+}
+
+body.dark-mode .usos {
+    color: #ddd;
+}
+
+/* Navegação */
 .navegacao {
-    background-color: rgb(255, 147, 147);
-    height: 50px;
+    background-color: #4e73df;
+    height: 60px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: solid 3px black;
-    justify-content: space-between;
-    padding: 0 20px;
+    border-bottom: 3px solid #fff;
+    flex-wrap: wrap; /* Permite que os itens se reorganizem em telas menores */
 }
 
 .navegacao a {
     text-decoration: none;
-    padding: 0 15px;
-    position: relative;
-    font-size: 16px;
-    white-space: nowrap;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: 5px;
 }
 
-.navegacao a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: -20px;
-    height: 57px;
-    width: 2px;
-    background-color: black;
+.navegacao a:hover {
+    background-color: #3a5bdb;
 }
 
-.container {
-    text-align: center;
-}
-
+/* Cabeçalho */
 .cabecalho {
-    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cabecalho h1 {
+    font-size: 48px;
+    color: #4e73df;
 }
 
 .toggle-btn {
     margin-top: 10px;
-    background-color: #c2b741;
+    background-color: #ff9f00;
     color: white;
-    width: 150px;
-    height: 40px;
+    width: 160px;
+    height: 45px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .toggle-btn:hover {
-    background-color: #968e37;
+    background-color: #ff7b00;
 }
 
+/* Título da página */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* altura ajustável conforme necessário */
+    margin-top: 30px;
+}
+
+.title h1 {
+    font-size: 48px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Centro */
 #centro {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 400px;
+    margin-top: 30px;
 }
 
 .div {
-    border: solid purple 7px;
-    width: 50%;
+    border: solid 5px #4e73df;
+    width: 70%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
 }
 
 .hover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
     transition: transform 0.3s ease;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .hover-image:hover {
-    transform: translateY(-20px);
-  }
-
-.box-materials{
-    margin: 10px;
-    border: solid black 3px;
-  }
-
-.box-materials a{
-    font-size: 30px;
-    color: purple;
-    text-decoration: none;
-  }
-
-  body.dark-mode .box-materials a {
-    color: white;
 }
 
-  .usos {
+.hover-image:hover {
+    transform: scale(1.05);
+}
+
+/* Box de materiais */
+.box-materials {
+    margin: 40px auto;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-materials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4e73df;
+}
+
+.box-materials a {
+    font-size: 18px;
+    color: #4e73df;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.box-materials a:hover {
+    color: #3a5bdb;
+}
+
+/* Termos de Uso */
+.usos {
     display: block;
     text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #4e73df;
     text-decoration: none;
 }
 
-body.dark-mode .usos{
-    color: white;
+.usos:hover {
+    color: #3a5bdb;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas de 768px ou menores (tablets e celulares) */
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column; /* Navegação vertical em telas pequenas */
+        height: auto;
+    }
+
+    .navegacao a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .title h1 {
+        font-size: 36px; /* Reduz o tamanho do título em telas pequenas */
+    }
+
+    #centro {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .div {
+        width: 90%; /* Faz a imagem ocupar mais espaço em telas pequenas */
+        height: 250px;
+    }
+
+    .box-materials {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .box-materials h2 {
+        font-size: 20px; /* Tamanho do título dos links reduzido */
+    }
+
+    .box-materials a {
+        font-size: 16px; /* Tamanho dos links ajustado */
+    }
+}
+
+/* Para telas de 480px ou menores (celulares em modo retrato) */
+@media (max-width: 480px) {
+    .cabecalho h1 {
+        font-size: 28px; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .toggle-btn {
+        width: 140px; /* Reduz o tamanho do botão */
+        height: 40px;
+    }
+
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .navegacao a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .box-materials {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .box-materials h2 {
+        font-size: 18px;
+    }
+
+    .box-materials a {
+        font-size: 14px;
+    }
 }

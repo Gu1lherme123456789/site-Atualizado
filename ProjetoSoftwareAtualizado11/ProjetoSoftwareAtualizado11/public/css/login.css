@@ -1,10 +1,19 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #d5f0e3;
+    box-sizing: border-box;
 }
 
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo escuro */
 body.dark-mode {
     background-color: #222;
     color: white;
@@ -14,75 +23,103 @@ body.dark-mode .navegacao a {
     color: white;
 }
 
+body.dark-mode .box-materials a {
+    color: #ddd;
+}
+
+body.dark-mode .usos {
+    color: #ddd;
+}
+
+/* Navegação */
 .navegacao {
-    background-color: rgb(255, 147, 147);
-    height: 50px;
+    background-color: #4e73df;
+    height: 60px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: solid 3px black;
-    justify-content: space-between;
-    padding: 0 20px;
+    border-bottom: 3px solid #fff;
+    flex-wrap: wrap;
 }
 
 .navegacao a {
     text-decoration: none;
-    padding: 0 15px;
-    position: relative;
-    font-size: 16px;
-    white-space: nowrap;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: 5px;
 }
 
-.navegacao a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: -20px;
-    height: 57px;
-    width: 2px;
-    background-color: black;
+.navegacao a:hover {
+    background-color: #3a5bdb;
 }
 
-.container {
-    text-align: center;
-}
-
+/* Cabeçalho */
 .cabecalho {
-    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.cabecalho h1 {
+    font-size: 48px;
+    color: #4e73df;
 }
 
 .toggle-btn {
     margin-top: 10px;
-    background-color: #c2b741;
+    background-color: #ff9f00;
     color: white;
-    width: 150px;
-    height: 40px;
+    width: 160px;
+    height: 45px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .toggle-btn:hover {
-    background-color: #968e37;
+    background-color: #ff7b00;
 }
 
-#registro_form {
+/* Título da página */
+.title {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.title h1 {
+    font-size: 48px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Formulário */
+#registro_form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     border-radius: 8px;
-    margin-top: 15px;
     color: black;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .form-group {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
@@ -118,7 +155,7 @@ input {
 }
 
 body.dark-mode .toggle-password {
-    color: black;
+    color: white;
 }
 
 .forgot-password {
@@ -129,6 +166,7 @@ body.dark-mode .toggle-password {
     text-decoration: none;
 }
 
+/* Botão de login */
 .botao {
     width: 100%;
     padding: 10px;
@@ -140,6 +178,7 @@ body.dark-mode .toggle-password {
     cursor: pointer;
 }
 
+/* Link para cadastro */
 .calo {
     background-color: blue;
     color: white;
@@ -149,6 +188,7 @@ body.dark-mode .toggle-password {
     text-decoration: none;
 }
 
+/* Termos de uso */
 .usos {
     display: block;
     text-align: center;
@@ -157,6 +197,31 @@ body.dark-mode .toggle-password {
     text-decoration: none;
 }
 
-body.dark-mode .usos{
+body.dark-mode .usos {
     color: white;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    #registro_form {
+        grid-template-columns: 1fr;
+    }
+    .navegacao {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navegacao a {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navegacao a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #registro_form {
+        padding: 10px;
+    }
 }

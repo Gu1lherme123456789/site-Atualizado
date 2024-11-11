@@ -2,7 +2,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d5f0e3;
+    background-color: #ffffff;
 }
 
 body.dark-mode {
@@ -15,31 +15,20 @@ body.dark-mode .navegacao a {
 }
 
 .navegacao {
-    background-color: rgb(255, 147, 147);
+    background-color: rgb(68, 68, 68);
     height: 50px;
     display: flex;
     align-items: center;
     border-bottom: solid 3px black;
     justify-content: space-between;
-    padding: 0 20px;
-}
-
-.navegacao a {
+  }
+  
+  .navegacao a {
+    color: white;
     text-decoration: none;
-    padding: 0 15px;
     position: relative;
-    font-size: 16px;
+    font-size: 23px;
     white-space: nowrap;
-}
-
-.navegacao a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: -20px;
-    height: 57px;
-    width: 2px;
-    background-color: black;
 }
 
 .container {
@@ -80,3 +69,16 @@ body.dark-mode .usos{
     color: white;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .imgPremium{
+    width:  200px;
+    height: 150px;
+  }

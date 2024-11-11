@@ -1,10 +1,19 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #d5f0e3;
+    box-sizing: border-box;
 }
 
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo escuro */
 body.dark-mode {
     background-color: #222;
     color: white;
@@ -14,141 +23,161 @@ body.dark-mode .navegacao a {
     color: white;
 }
 
+body.dark-mode .box-materials a {
+    color: #ddd;
+}
+
+body.dark-mode .usos {
+    color: #ddd;
+}
+
+/* Navegação */
 .navegacao {
-    background-color: rgb(255, 147, 147);
-    height: 50px;
+    background-color: #4e73df;  /* Azul */
+    height: 60px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: solid 3px black;
-    justify-content: space-between;
-    padding: 0 20px;
+    border-bottom: 3px solid #fff;
+    flex-wrap: wrap;
 }
 
 .navegacao a {
     text-decoration: none;
-    padding: 0 15px;
-    position: relative;
-    font-size: 16px;
-    white-space: nowrap;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: 5px;
 }
 
-.navegacao a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: -20px;
-    height: 57px;
-    width: 2px;
-    background-color: black;
+.navegacao a:hover {
+    background-color: #3a5bce;
 }
 
-.container {
-    text-align: center;
-}
-
+/* Cabeçalho */
 .cabecalho {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+}
+
+.imgPremium {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
 .toggle-btn {
-    margin-top: 10px;
     background-color: #c2b741;
     color: white;
-    width: 150px;
-    height: 40px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
 .toggle-btn:hover {
     background-color: #968e37;
 }
 
+/* Pesquisa */
 #searchbar {
     margin-top: 30px;
-    width: 50vw;
     padding: 10px;
+    width: 50%;
+    max-width: 400px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    outline: none;
 }
 
-.image-container {
-    position: relative;
-    overflow: hidden;
+/* Layout das matérias em grid */
+.grid-container {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);  /* 4 colunas */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-.container-display {
-    text-align: center;
-    text-decoration: none;
-}
+
 
 .mts {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mts a {
     text-decoration: none;
-
+    color: #4e73df;  /* Azul */
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
 }
 
-a{
-text-decoration: none;
-color: purple;
-
+.mts a:hover {
+    color: #333;
+    text-decoration: underline;
 }
 
-
-body.dark-mode .mts a {
-    color: white;
-}
-
+/* Botões de Favoritar */
 .button-container {
     display: flex;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-.coracao_icon {
-    font-size: 20px;
+    justify-content: space-around;
 }
 
 .favoritar, .desfavoritar {
-    text-align: center;
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
+    padding: 10px;
     font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 .favoritar {
-    background-color: rgb(97, 197, 99);
-    margin-left: 10px;
+    background-color: #61c599;
 }
 
 .desfavoritar {
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 10px;
-    background-color: rgb(255, 255, 255);
-    margin-left: 10px;
-    color: black;
+    background-color: #ff6161;
 }
 
+.coracao_icon {
+    font-size: 16px;
+}
+
+/* Termos de Uso */
 .usos {
-    display: block;
     text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    text-decoration: none;
+    font-size: 18px;
+    margin-top: 40px;
+    color: #4e73df;
+    display: block;
 }
 
-body.dark-mode .usos {
+.usos:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
     color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.image-container{
+    display: flex;
+    text-align: center;
 }

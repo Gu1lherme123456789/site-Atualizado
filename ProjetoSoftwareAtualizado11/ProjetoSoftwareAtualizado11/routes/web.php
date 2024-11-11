@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('inicialPage');
 });
 
+Route::get('/login', function () {
+    return view('Login');
+});
+
 Route::get('/Comentarios', function () {
     return view('Comentarios');
 });
@@ -100,4 +104,5 @@ Route::get('/PaginaEspanhol', function () {
 
 Route::get('/EditarSenha', function () {
     return view('EditarSenha');
-});
+}); 
+

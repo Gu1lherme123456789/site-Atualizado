@@ -2,7 +2,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d5f0e3;
+    background-color: white;
 }
 
 body.dark-mode {
@@ -15,25 +15,29 @@ body.dark-mode .navegacao a {
 }
 
 .navegacao {
-    background-color: rgb(255, 147, 147);
+    background-color: #007bff;
     height: 50px;
     display: flex;
     align-items: center;
-    border-bottom: solid 3px black;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 250px;
 }
 
 .navegacao a {
+    color: white;
     text-decoration: none;
     padding: 0 15px;
     position: relative;
-    font-size: 16px;
+    font-size: 23px;
     white-space: nowrap;
 }
 
+.navegacao h1{
+    color: white;
+    margin-right: 400px;
+}
+
 .navegacao a:not(:last-child)::after {
-    content: "";
     position: absolute;
     right: -10px;
     top: -20px;
@@ -45,8 +49,13 @@ body.dark-mode .navegacao a {
 .cont {
     text-align: center;
 }
+.container {
+    text-align: center;
+}
 
 .cabecalho {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -67,12 +76,12 @@ body.dark-mode .navegacao a {
     background-color: #968e37;
 }
 
-.container {
+.containerr {
     width: 50%;
     margin: 50px auto;
     padding: 20px;
     color: black;
-    background-color: white;
+    background-color:#f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -113,7 +122,7 @@ textarea {
 .btnContato {
     width: 100%;
     padding: 15px;
-    background-color: #4CAF50;
+    background-color: #ff6f61;
     color: white;
     border: none;
     border-radius: 5px;
@@ -123,7 +132,7 @@ textarea {
 }
 
 .btnContato:hover {
-    background-color: #45a049;
+    background-color: #fc6052;
 }
 
 .social-icons {
@@ -144,11 +153,11 @@ textarea {
 }
 
 body.dark-mode .social-icons i {
-    color: #ff0000;
+    color: #0056b3;
 }
 
 body.dark-mode .social-icons i:hover {
-    color: #cc0000;
+    color: #0056b3;
 }
 
 .usos {
@@ -161,4 +170,19 @@ body.dark-mode .social-icons i:hover {
 
 body.dark-mode .usos{
     color: white;
+}
+
+.imgPremium{
+    width:  200px;
+    height: 150px;
+  
+}
+  
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }

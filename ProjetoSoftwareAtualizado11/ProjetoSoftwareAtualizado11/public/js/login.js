@@ -38,7 +38,7 @@ function validacaoEmail(field) {
         const toggleIcon = document.querySelector('.toggle-password');
 
         if (passwordField.type === "password") {
-            passwordField.type = "text"; // Muda para texto
+            passwordField.type = "text"; // Muda para texto 
             toggleIcon.innerHTML = "&#128064;"; // Ícone de olho aberto
         } else {
             passwordField.type = "password"; // Muda para senha

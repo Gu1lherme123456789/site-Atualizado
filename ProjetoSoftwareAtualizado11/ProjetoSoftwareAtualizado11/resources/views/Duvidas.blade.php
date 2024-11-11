@@ -20,7 +20,7 @@
 
   <div class="cont">
     <div class="cabecalho">
-      <img class="imgPremium" src="https://cdn.discordapp.com/attachments/1080645931189416037/1303830520119033966/CONHECIMENTOPREMIUM-removebg-preview.png?ex=672d2e4b&is=672bdccb&hm=25607e56ddc7b80c923d47881a92863235a9c81d5ff91a1c36049b0a29c1a72f&" alt="" />
+      <img class="imgPremium" src="img/conhecimento.png" alt="" />
       <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
     </div>
 
@@ -43,15 +43,15 @@
     </div>
 
     <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Conhecimento Premium. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-            </div>
-        </div>
-    </footer>
+      <footer>
+          <div class="container">
+              <p>&copy; 2024 Conhecimento Premium. Todos os direitos reservados.</p>
+              <div class="social-links">
+                  <a href="#">Facebook</a>
+                  <a href="#">Instagram</a>
+              </div>
+          </div>
+      </footer>
     <script src="{{ asset('js/duvidas.js') }}"></script>
 </body>
 

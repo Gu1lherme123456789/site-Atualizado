@@ -166,6 +166,14 @@ h2 {
     background-color: var(--primary-color);
 }
 
+.overlay{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8mRUx6Gy-GUkcsCRt1dWcGdevCCsxJjoSdg&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+
+}
+
 /* Rodapé */
 footer {
     background-color: #333;
@@ -178,4 +186,88 @@ footer .social-links a {
     margin: 0 15px;
     text-decoration: none;
     font-size: 1
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Hero Section */
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero .container h1 {
+        font-size: 30px;
+    }
+
+    .hero .container p {
+        font-size: 16px;
+    }
+
+    /* Sobre Section */
+    .sobre .container h2 {
+        font-size: 24px;
+    }
+
+    /* Como Funciona */
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Testemunhos */
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer .social-links {
+        margin-top: 20px;
+    }
+}
+
+/* Responsividade para dispositivos muito pequenos (ex: smartphones) */
+@media screen and (max-width: 480px) {
+
+    .hero .container h1 {
+        font-size: 24px;
+    }
+
+    .hero .container p {
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .steps {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .step h3 {
+        font-size: 20px;
+    }
+
+    .testimonial {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer .social-links a {
+        font-size: 14px;
+    }
 }

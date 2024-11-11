@@ -15,11 +15,10 @@ body.dark-mode .navegacao a {
 }
 
 .navegacao {
-    background-color: rgb(68, 68, 68);
+    background-color: #007bff;
     height: 50px;
     display: flex;
     align-items: center;
-    border-bottom: solid 3px black;
     justify-content: space-between;
     padding: 0 250px;
 }
@@ -125,7 +124,7 @@ input {
     width: 95%;
     padding: 10px;
     font-size: 16px;
-    background-color:#0073e6;
+    background-color: #ff6f61;
     color: white;
     border: none;
     border-radius: 5px;
@@ -148,15 +147,13 @@ body.dark-mode .usos{
 .imgPremium{
     width:  200px;
     height: 150px;
+}
   
-  }
-  
-  footer {
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #007bff;
     color: white;
-    padding: 10px;
     text-align: center;
-  }
+}

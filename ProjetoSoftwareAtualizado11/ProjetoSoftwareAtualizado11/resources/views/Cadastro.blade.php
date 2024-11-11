@@ -15,7 +15,7 @@
 
 <div class="container">
     <div class="cabecalho">
-    <img class="imgPremium" src="https://cdn.discordapp.com/attachments/1080645931189416037/1303830520119033966/CONHECIMENTOPREMIUM-removebg-preview.png?ex=672d2e4b&is=672bdccb&hm=25607e56ddc7b80c923d47881a92863235a9c81d5ff91a1c36049b0a29c1a72f&" alt="" />
+    <img class="imgPremium" src="img/conhecimento.png" alt="" />
             <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
     </div>
 
@@ -34,6 +34,7 @@
                     <input type="password" id="passwordField" placeholder="Digite sua senha" maxlength="60" class="senha" required="required">
                     <span class="toggle-password" onclick="togglePassword()">&#128065;</span>
                 </div>
+                <a href="/login">Já tem conta? Clique aqui</a>
             </div>
 
             <a href="javascript:void(0)" class="btnCadastro" id="fazerCadastro">Fazer Cadastro</a>

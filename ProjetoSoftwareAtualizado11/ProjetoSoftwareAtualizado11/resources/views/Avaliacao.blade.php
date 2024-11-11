@@ -18,7 +18,7 @@
 
   <div class="container">
     <div class="cabecalho">
-      <h1>CONHECIMENTOPREMIUM</h1>
+      <img class="imgPremium" src="img/conhecimento.png" alt="" />
       <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
     </div>
 
@@ -49,6 +49,13 @@
   </div>
 
   <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
+
+  <footer>
+        <div class="container">
+            <p>&copy; 2024 Conhecimento Premium. Todos os direitos reservados.</p>
+           
+        </div>
+    </footer>
   <script src="{{ asset('js/avaliacao.js') }}"></script>
 </body>
 </html>

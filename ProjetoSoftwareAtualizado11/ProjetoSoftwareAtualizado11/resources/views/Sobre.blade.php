@@ -16,9 +16,9 @@
     <a href="/Contato"> Entre em Contato </a>
 </div>
 
-<div class="container">
+<div class="containerr">
     <div class="cabecalho">
-        <h1>CONHECIMENTOPREMIUM</h1>
+    <img class="imgPremium" src="img/conhecimento.png" alt="" />
         <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
     </div>
     <h1 class="pouco">Um pouco da nossa história</h1>
@@ -29,11 +29,16 @@
         sempre atualizar o site com novos conteúdos. <br> <br>
         Projetada especialmente para adolescentes e aqueles que não conseguiram ter um conhecimento acadêmico sólido. <br> <br>
         Uma foto de nosso grupo:
-    </h2>
-</div>
+        </h2>
+    </div>
         <a class="usos" href="/TermosdeUso">Termos de Uso</a>
 
         <script src="{{ asset('js/sobre.js') }}"></script>
-
+        <footer>
+        <div class="container">
+            <p>&copy; 2024 Conhecimento Premium. Todos os direitos reservados.</p>
+           
+        </div>
+    </footer>
         </body>
         </html>

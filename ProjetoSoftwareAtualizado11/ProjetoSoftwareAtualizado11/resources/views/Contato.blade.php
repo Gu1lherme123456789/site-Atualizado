@@ -5,25 +5,24 @@
     <title>Página de Contato</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="{{ asset('css/contato.css') }}" rel="stylesheet" type="text/css"/>
-  </head>
-<body>
-  <link href="{{ asset('css/contato.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('css/inicialPage.css') }}" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
   <div class="navegacao">
-    <a href="/Comentarios">Comente algo</a>
-    <a href="/Materias"> Matérias </a>
-    <a href="/Duvidas">Informe sua dúvida para nós</a>
-    <a href="/Avaliacao">Avalie-nos</a>
-    <a href="/Sobre">Sobre Nós</a>
+    <!-- Ícone de seta de voltar -->
+    <a href="javascript:history.back()" class="back-arrow">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </a>
+    <h1>Entre em Contato</h1>
   </div>
   <div class="cont">
     <div class="cabecalho">
-        <h1>CONHECIMENTOPREMIUM</h1>
+    <img class="imgPremium" src="img/conhecimento.png" alt="" />
         <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
     </div>
 
-  <div class="container">
+  <div class="containerr">
     <form>
       <h2>Form de Contato</h2>
       <div class="form-group">
@@ -48,6 +47,15 @@
 </div>
   </div>
   <a class="usos" href="/TermosdeUso">Termos de Uso</a>
+  <footer>
+        <div class="container">
+            <p>&copy; 2024 Conhecimento Premium. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+  </footer>
   <script src="{{ asset('js/contato.js') }}"></script>
 </body>
 </html>
