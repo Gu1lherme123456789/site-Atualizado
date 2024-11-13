@@ -14,6 +14,10 @@ body.dark-mode .navegacao a {
     color: white;
 }
 
+.matfav{
+    text-align: center;
+}
+
 .navegacao {
     background-color: rgb(68, 68, 68);
     height: 50px;
@@ -70,6 +74,7 @@ body.dark-mode .usos{
 }
 
 footer {
+    z-index: -1;
     position: absolute;
     bottom: 0;
     width: 100%;

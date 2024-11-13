@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pàgina de Matérias Favoritas</title>
     <link href="{{ asset('css/favoritas.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('css/materias.css') }}" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
-<div class="navegacao">
-    <a href="/Comentarios"> Comente algo </a>
-    <a href="/Materias"> Matérias </a>
-    <a href="/Professores"> Professores </a>
-    <a href="/Calendario"> VIP: Agende sua aula ao vivo </a>
-    <a href="/Duvidas"> Informe sua dúvida para nós </a>
-    <a href="/Avaliacao"> Avalie-nos </a>
-    <a href="/Contato"> Entre em Contato </a>
-    <a href="/Sobre"> Sobre Nós </a>
-</div>
-
-<div class="container">
-    <div class="cabecalho">
-    <img class="imgPremium" src="img/conhecimento.png" alt="" />
-        <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
+<header>
+    <!-- Botão do menu hambúrguer -->
+    <div class="menu-toggle" id="menuToggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
+    <img class="imgPremium" src="img/conhecimento.png" alt="Conhecimento Premium" />
+    <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
+  </header>
 
-    <div>
+  <!-- Menu Lateral -->
+  <nav id="menu" class="menu">
+    <ul>
+      <li><a href="/Comentarios">💬Comentarios</a></li>
+      <li><a href="/Professores">👨‍🏫Professores</a></li>
+      <li><a href="/Favoritas"> 📙Matérias Favoritas</a></li>
+      <li><a href="/Calendario">👑VIP: Aulas ao vivo</a></li>
+      <li><a href="/Duvidas">❓Informe sua dúvida</a></li>
+      <li><a href="/Avaliacao">✔️Avalie-nos</a></li>
+      <li><a href="/Contato">📞Contatos</a></li>
+      <li><a href="/Sobre">Sobre Nós</a></li>
+    </ul>
+  </nav>
+
+    <div class="matfav">
         <h1>Minhas matérias favoritas são:</h1>
         <div id="listaFavoritas"></div>
     </div>
@@ -56,6 +65,7 @@
 
 <a class="usos" href="/TermosdeUso"> Termos de Uso </a>
 <script src="{{ asset('js/favoritas.js') }}"></script>
+<script src="{{ asset('js/materias.js') }}"></script>
 <footer>
         <div class="container">
             <p>&copy; 2024 Conhecimento Premium. Todos os direitos reservados.</p>

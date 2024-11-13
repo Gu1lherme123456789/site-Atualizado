@@ -56,6 +56,68 @@ body.dark-mode .usos {
     background-color: #3a5bdb;
 }
 
+header {
+    background-color:  #4e73df;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      padding: 10px;
+    }
+    
+    .menu-toggle {
+      width: 30px;
+      height: 21px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    
+    .menu-toggle .bar {
+        
+      width: 100%;
+      height: 5px;
+      background-color: white;
+      border-radius: 5px;
+    }
+    
+    .menu {
+      position: fixed;
+      top: 0;
+      left: -250px; /* Menu começa escondido */
+      width: 250px;
+      height: 100%;
+      background-color: #4e73df;
+      transition: left 0.3s ease;
+      padding-top: 50px;
+    }
+    
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .menu ul li {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    .menu.open {
+      left: 0; /* Menu se move para a posição visível */
+    }
+    
+    .imgPremium {
+        width: 150px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
 /* Cabeçalho */
 .cabecalho {
     text-align: center;

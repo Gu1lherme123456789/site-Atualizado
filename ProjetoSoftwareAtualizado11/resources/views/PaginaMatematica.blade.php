@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Matemática</title>
     <link href="{{ asset('css/matematica.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('css/materias.css') }}" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-
-    <div class="navegacao">
-        <a href="/Comentarios">Comente algo</a>
-        <a href="/Materias">Matérias</a>
-        <a href="/Duvidas">Informe sua dúvida</a>
-        <a href="/Avaliacao">Avalie-nos</a>
-        <a href="/Contato">Entre em Contato</a>
+<header>
+    <!-- Botão do menu hambúrguer -->
+    <div class="menu-toggle" id="menuToggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
+    <img class="imgPremium" src="img/conhecimento.png" alt="Conhecimento Premium" />
+    <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
+  </header>
+
+  <!-- Menu Lateral -->
+  <nav id="menu" class="menu">
+    <ul>
+      <li><a href="/Comentarios">💬Comentarios</a></li>
+      <li><a href="/Professores">👨‍🏫Professores</a></li>
+      <li><a href="/Favoritas"> 📙Matérias Favoritas</a></li>
+      <li><a href="/Calendario">👑VIP: Aulas ao vivo</a></li>
+      <li><a href="/Duvidas">🤔Informe sua dúvida</a></li>
+      <li><a href="/Avaliacao">✔️Avalie-nos</a></li>
+      <li><a href="/Contato">📞Contatos</a></li>
+      <li><a href="/Sobre">Sobre Nós</a></li>
+    </ul>
+  </nav>
 
     <div class="container">
-        <div class="cabecalho">
-            <h1>CONHECIMENTOPREMIUM</h1>
-            <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
-        </div>
+    
 
         <div class="title">
             <h1>MATEMÁTICA</h1>
@@ -47,5 +61,6 @@
     </div>
 
     <script src="{{ asset('js/matematica.js') }}"></script>
+    <script src="{{ asset('js/materias.js') }}"></script>
 </body>
 </html>

@@ -16,10 +16,10 @@
         <i class="fas fa-arrow-left"></i> Voltar
     </a>
     <h1>Inscrição VIP para Aulas ao Vivo</h1>
+    <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
 </header>
 
 <!-- Botão para alterar o fundo -->
-<button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
 
 <div class="container">
 

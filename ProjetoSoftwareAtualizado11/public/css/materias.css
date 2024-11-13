@@ -71,7 +71,7 @@ body.dark-mode .usos {
 }
 
 .toggle-btn {
-    background-color: #c2b741;
+    background-color:  #4e73df;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -81,7 +81,7 @@ body.dark-mode .usos {
 }
 
 .toggle-btn:hover {
-    background-color: #968e37;
+    background-color: #3a5bdb;
 }
 
 /* Pesquisa */
@@ -94,23 +94,25 @@ body.dark-mode .usos {
     border-radius: 5px;
 }
 
-/* Layout das matérias em grid */
+/* Grid para Materiais */
 .grid-container {
+    text-align: center;
     display: flex;
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);  /* 4 colunas */
-    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
     margin-top: 20px;
 }
 
-
-
 .mts {
+    list-style: none;
+    margin-top: 10px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* 3 colunas */
+    margin: 10px;
 }
 
 .mts a {
@@ -143,10 +145,15 @@ body.dark-mode .usos {
 
 .favoritar {
     background-color: #61c599;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .desfavoritar {
     background-color: #ff6161;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .coracao_icon {
@@ -179,5 +186,153 @@ footer {
 
 .image-container{
     display: flex;
+    flex-direction: row;
     text-align: center;
+}
+
+/* ------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+background-color:  #4e73df;
+display: flex;
+align-items: center;
+justify-content: space-between;
+  padding: 10px;
+}
+
+.menu-toggle {
+  width: 30px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+    
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Menu começa escondido */
+  width: 250px;
+  height: 100%;
+  background-color: #4e73df;
+  transition: left 0.3s ease;
+  padding-top: 50px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu.open {
+  left: 0; /* Menu se move para a posição visível */
+}
+
+
+/* Media Queries */
+
+/* Para telas pequenas (como smartphones) */
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navegacao a {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #searchbar {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mts {
+        width: 80%; /* Aumenta o tamanho dos itens da lista */
+        margin-bottom: 20px;
+    }
+
+    .cabecalho {
+        margin-top: 10px;
+    }
+
+    .imgPremium {
+        width: 120px;
+        height: 80px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* Para telas menores (como smartphones em modo retrato) */
+@media (max-width: 480px) {
+    .navegacao {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navegacao a {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .grid-container {
+        padding: 10px;
+    }
+
+    .mts {
+        width: 100%; /* Item ocupa toda a largura da tela */
+    }
+
+    #searchbar {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
 }

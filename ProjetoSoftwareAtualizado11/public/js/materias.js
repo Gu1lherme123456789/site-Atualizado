@@ -65,4 +65,18 @@ function desfavoritar(button) {
     alert(`Matéria "${materia}" removida dos favoritos!`);
 }
 
+const menuToggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
 
+// Função para alternar a visibilidade do menu
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
+
+// Fecha o menu se o usuário clicar fora dele
+document.addEventListener('click', (event) => {
+  // Verifica se o clique foi fora do menu e do botão hambúrguer
+  if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+    menu.classList.remove('open'); // Fecha o menu
+  }
+});

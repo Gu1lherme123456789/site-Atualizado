@@ -8,7 +8,42 @@
 </head>
 
 <body class="container">
-    <div class="navegacao">
+<header>
+    <!-- Botão do menu hambúrguer -->
+    <div class="menu-toggle" id="menuToggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <img class="imgPremium" src="img/conhecimento.png" alt="Conhecimento Premium" />
+    <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
+  </header>
+
+  <!-- Menu Lateral -->
+  <nav id="menu" class="menu">
+    <ul>
+      <li><a href="/Comentarios">💬Comentarios</a></li>
+      <li><a href="/Professores">👨‍🏫Professores</a></li>
+      <li><a href="/Favoritas"> 📙Matérias Favoritas</a></li>
+      <li><a href="/Calendario">👑VIP: Aulas ao vivo</a></li>
+      <li><a href="/Duvidas">❓Informe sua dúvida</a></li>
+      <li><a href="/Avaliacao">✔️Avalie-nos</a></li>
+      <li><a href="/Contato">📞Contatos</a></li>
+      <li><a href="/Sobre">Sobre Nós</a></li>
+    </ul>
+  </nav>
+
+    <!-- Menu Hamburguer -->
+ <!--   <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="hamburger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    -- Navegação (Menu) -- 
+    <div class="navegacao" id="menu">
         <a href="/Comentarios">Comente algo</a>
         <a href="/Professores">Professores</a>
         <a href="/Favoritas">Matérias Favoritas</a>
@@ -18,20 +53,14 @@
         <a href="/Contato">Entre em Contato</a>
         <a href="/Sobre">Sobre Nós</a>
     </div>
-
-    <div class="container">
-        <div class="cabecalho">
-            <img class="imgPremium" src="img/conhecimento.png" alt="" />
-            <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
+    -->
+        <div class="searchbar2"> 
+            <h1 class="matss">Matérias disponíveis no nosso site:</h1>
+            <input id="searchbar" onkeyup="search_materia()" type="text" name="search" placeholder="Pesquisar matéria" autocomplete="off">
         </div>
 
-        <input id="searchbar" onkeyup="search_materia()" type="text" name="search" placeholder="Pesquisar matéria" autocomplete="off">
-              
-      
-        <div class="image-container">
-        <h1 class="matss">Matérias disponíveis no nosso site:</h1>
             <div class="grid-container">
-                <ul>
+                <ul class="grid-container">
                     <li class="mts">
                         <span class="materias"><a href="/PaginaMatematica">Matemática</a></span>
                         <div class="button-container">
@@ -39,7 +68,7 @@
                                 <i class="coracao_icon">🖤</i> Favoritar
                             </button>
                             <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
-                                <i class="coracao_icon">🤍</i> Desfavoritar
+                                <i class="coracao_icon">💔</i> Desfavoritar
                             </button>
                         </div>
                     </li>
@@ -50,7 +79,7 @@
                                 <i class="coracao_icon">🖤</i> Favoritar
                             </button>
                             <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
-                                <i class="coracao_icon">🤍</i> Desfavoritar
+                                <i class="coracao_icon">💔</i> Desfavoritar
                             </button>
                         </div>
                     </li>
@@ -61,7 +90,7 @@
                                 <i class="coracao_icon">🖤</i> Favoritar
                             </button>
                             <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
-                                <i class="coracao_icon">🤍</i> Desfavoritar
+                                <i class="coracao_icon">💔</i> Desfavoritar
                             </button>
                         </div>
                     </li>
@@ -72,7 +101,7 @@
                                 <i class="coracao_icon">🖤</i> Favoritar
                             </button>
                             <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
-                                <i class="coracao_icon">🤍</i> Desfavoritar
+                                <i class="coracao_icon">💔</i> Desfavoritar
                             </button>
                         </div>
                     </li>
@@ -83,7 +112,7 @@
                                 <i class="coracao_icon">🖤</i> Favoritar
                             </button>
                             <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
-                                <i class="coracao_icon">🤍</i> Desfavoritar
+                                <i class="coracao_icon">💔</i> Desfavoritar
                             </button>
                         </div>
                     </li>
@@ -94,7 +123,7 @@
                                 <i class="coracao_icon">🖤</i> Favoritar
                             </button>
                             <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
-                                <i class="coracao_icon">🤍</i> Desfavoritar
+                                <i class="coracao_icon">💔</i> Desfavoritar
                             </button>
                         </div>
                     </li>
@@ -105,7 +134,7 @@
                                 <i class="coracao_icon">🖤</i> Favoritar
                             </button>
                             <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
-                                <i class="coracao_icon">🤍</i> Desfavoritar
+                                <i class="coracao_icon">💔</i> Desfavoritar
                             </button>
                         </div>
                     </li>
@@ -116,7 +145,7 @@
                                 <i class="coracao_icon">🖤</i> Favoritar
                             </button>
                             <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
-                                <i class="coracao_icon">🤍</i> Desfavoritar
+                                <i class="coracao_icon">💔</i> Desfavoritar
                             </button>
                         </div>
                     </li>
@@ -127,13 +156,13 @@
                                 <i class="coracao_icon">🖤</i> Favoritar
                             </button>
                             <button type="button" class="desfavoritar" onclick="desfavoritar(this)">
-                                <i class="coracao_icon">🤍</i> Desfavoritar
+                                <i class="coracao_icon">💔</i> Desfavoritar
                             </button>
                         </div>
                     </li>
                 </ul>
             </div>
-        </div>
+        
 
         <a class="usos" href="/TermosdeUso">Termos de Uso</a>
         <footer>
