@@ -5,29 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
     <link href="{{ asset('css/login.css') }}" rel="stylesheet" type="text/css"/>
+    <!-- Link para o Font Awesome para usar o ícone de seta -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
-    <div class="navegacao">
-        <a href="/Comentarios">Comente algo</a>
-        <a href="/Materias">Matérias</a>
-        <a href="/Favoritas">Matérias Favoritas</a>
-        <a href="/Duvidas">Informe sua dúvida para nós</a>
-        <a href="/Avaliacao">Avalie-nos</a>
-        <a href="/Contato">Entre em Contato</a>
-        <a href="/Calendario">VIP: Agende sua aula ao vivo</a>
-        <a href="/Sobre">Sobre Nós</a>
-        <a href="/Professores">Professores</a>
-    </div>
 
     <div class="container">
         <div class="cabecalho">
-            <h1>CONHECIMENTOPREMIUM</h1>
+
             <button class="toggle-btn" onclick="toggleMode()" id="btn">Alterar fundo</button>
         </div>
         <div>
             <form id="registro_form">
-                <h1>Form de Login</h1>
+                <h1>Faça seu Login</h1>
 
                 <div class="form-group">
                     <label for="email">Insira seu email:</label>

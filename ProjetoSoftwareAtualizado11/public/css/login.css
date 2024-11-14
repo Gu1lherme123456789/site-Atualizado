@@ -1,5 +1,6 @@
 /* Reset básico */
 * {
+    font-family: "Sour Gummy", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +8,6 @@
 
 /* Corpo */
 body {
-    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -70,8 +70,8 @@ body.dark-mode .usos {
 
 .toggle-btn {
     margin-top: 10px;
-    background-color: #ff9f00;
-    color: white;
+    background-color: white;
+    color: rgb(0, 0, 0);
     width: 160px;
     height: 45px;
     border: none;
@@ -82,25 +82,7 @@ body.dark-mode .usos {
 }
 
 .toggle-btn:hover {
-    background-color: #ff7b00;
-}
-
-/* Título da página */
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    margin-top: 30px;
-}
-
-.title h1 {
-    font-size: 48px;
-    color: #333;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    background-color:  rgb(197, 197, 197);
 }
 
 /* Formulário */
@@ -171,7 +153,7 @@ body.dark-mode .toggle-password {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #ff6f61;
     color: white;
     border: none;
     border-radius: 5px;
@@ -180,11 +162,10 @@ body.dark-mode .toggle-password {
 
 /* Link para cadastro */
 .calo {
-    background-color: blue;
+    background-color: #4e73df;
     color: white;
     font-size: 18px;
     text-align: center;
-    border-radius: 10px;
     text-decoration: none;
 }
 
@@ -202,20 +183,38 @@ body.dark-mode .usos {
 }
 
 /* Media Queries para Responsividade */
+
+/* Para dispositivos de até 768px (tablets e celulares em modo paisagem) */
 @media (max-width: 768px) {
+    /* Ajustes para o formulário */
     #registro_form {
         grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 15px;
     }
+
+    /* Ajustes na navegação */
     .navegacao {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .navegacao a {
         padding: 10px 0;
+        font-size: 16px;
+    }
+
+    /* Ajuste no botão de troca de tema */
+    .toggle-btn {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
     }
 }
 
+/* Para dispositivos de até 480px (celulares em modo retrato) */
 @media (max-width: 480px) {
+    /* Ajustes adicionais para telas menores */
     .navegacao a {
         font-size: 14px;
         padding: 10px;
@@ -223,5 +222,24 @@ body.dark-mode .usos {
 
     #registro_form {
         padding: 10px;
+    }
+
+    .botao {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .calo {
+        font-size: 16px;
+    }
+
+    .cabecalho h1 {
+        font-size: 32px;
+    }
+
+    .toggle-btn {
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
     }
 }

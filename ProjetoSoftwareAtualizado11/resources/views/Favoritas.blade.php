@@ -6,6 +6,9 @@
     <title>Pàgina de Matérias Favoritas</title>
     <link href="{{ asset('css/favoritas.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/materias.css') }}" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -25,6 +28,7 @@
     <ul>
       <li><a href="/Comentarios">💬Comentarios</a></li>
       <li><a href="/Professores">👨‍🏫Professores</a></li>
+      <li><a href="/Materias">Matérias</a></li>
       <li><a href="/Favoritas"> 📙Matérias Favoritas</a></li>
       <li><a href="/Calendario">👑VIP: Aulas ao vivo</a></li>
       <li><a href="/Duvidas">❓Informe sua dúvida</a></li>

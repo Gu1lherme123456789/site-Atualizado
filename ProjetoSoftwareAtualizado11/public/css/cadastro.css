@@ -1,5 +1,6 @@
+/* Estilos padrões para desktop */
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -15,11 +16,11 @@ body.dark-mode .navegacao a {
 }
 
 .navegacao {
-    background-color: #007bff;
+    background-color: #4e73df;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 250px;
 }
 
@@ -32,8 +33,9 @@ body.dark-mode .navegacao a {
     white-space: nowrap;
 }
 
-.container {
+.container1 {
     text-align: center;
+    margin-top: 80px;
 }
 
 .cabecalho {
@@ -73,6 +75,7 @@ body.dark-mode .toggle-password {
 }
 
 #registro_form {
+    text-align: center;
     display: flex;
     flex-direction: column;
     max-width: 400px;
@@ -99,9 +102,16 @@ input {
     width: 100%;
     padding: 10px;
     font-size: 14px;
+    font-weight: 700;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+input:focus {
+    background-color: #cdcdcd;  /* Cinza claro */
+    outline: none;  /* Remove o contorno padrão do navegador */
 }
 
 .password-container {
@@ -144,16 +154,101 @@ input {
 body.dark-mode .usos{
     color: white;
 }   
-.imgPremium{
-    width:  200px;
+
+.imgPremium {
+    width: 200px;
     height: 150px;
 }
-  
-footer {
+
+.header {
+    background-color: #f4f4f9;
+}
+
+.footer {
     position: absolute;
-    bottom: 0;
     width: 100%;
-    background-color: #007bff;
-    color: white;
+    bottom: 0;
+    background-color: #f4f4f9;
+    color: black;
     text-align: center;
+}
+
+/* Media Queries para dispositivos móveis e tablets */
+
+/* Para dispositivos de até 768px (tablets e celulares em modo paisagem) */
+@media screen and (max-width: 768px) {
+    .navegacao {
+        padding: 0 20px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navegacao a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    #registro_form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .toggle-btn {
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .imgPremium {
+        width: 150px;
+        height: 120px;
+    }
+
+    .btnCadastro {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .usos {
+        font-size: 18px;
+    }
+}
+
+/* Para dispositivos de até 480px (celulares em modo retrato) */
+@media screen and (max-width: 480px) {
+    .navegacao {
+        padding: 0 10px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navegacao a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    #registro_form {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .toggle-btn {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .imgPremium {
+        width: 120px;
+        height: 90px;
+    }
+
+    .btnCadastro {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .usos {
+        font-size: 16px;
+    }
 }
