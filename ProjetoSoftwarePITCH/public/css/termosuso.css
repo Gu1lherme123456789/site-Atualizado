@@ -1,0 +1,134 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navegacao a {
+    color: white;
+}
+
+.navegacao {
+    background-color: rgb(255, 147, 147);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px black;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    padding: 0 15px;
+    position: relative;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.navegacao a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    height: 57px;
+    width: 2px;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+.cabecalho {
+    align-items: center;
+}
+
+.toggle-btn {
+    margin-top: 10px;
+    background-color: #c2b741;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #968e37;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trr{
+    color: purple;
+    font-size: 40px;
+}
+
+.ter {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 25px
+}
+
+.tr {
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 25px
+}
+
+.tr li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+body.dark-mode .usos {
+    color: #ddd;
+}
+
+/* Termos de Uso */
+.usos {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    color: #4e73df;
+    display: block;
+}
+
+.usos:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color:  #4e73df;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+

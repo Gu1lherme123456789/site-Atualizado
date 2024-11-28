@@ -1,0 +1,362 @@
+* {
+    font-family: "Sour Gummy", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4e73df;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+
+.imgPremium {
+    width: 150px;
+    height: 100px;
+}
+
+.toggle-btn {
+    font-weight: 700;
+    background-color: #4e73df;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.toggle-btn:hover {
+    background-color: #3a5bdb;
+}
+/* Botão do Menu Hambúrguer */
+.menu-toggle {
+    width: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Para o menu */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Começa escondido */
+    width: 250px;
+    height: 100%;
+    background-color: #4e73df;
+    transition: left 0.3s ease;
+    padding-top: 50px;
+}
+
+.menu.open {
+    left: 0; /* Mostra o menu */
+}
+
+/* Para o botão */
+.menu-toggle .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle .bar.active:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Linha superior */
+}
+
+.menu-toggle .bar.active:nth-child(2) {
+    opacity: 0; /* Oculta a linha do meio */
+}
+
+.menu-toggle .bar.active:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Linha inferior */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Botão de voltar */
+.menu-back {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4b5c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000; /* Sobrepõe o resto */
+}
+
+.menu-back.visible {
+    display: block; /* Exibido apenas quando o menu está aberto */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imgPremium {
+        width: 120px;
+        height: 80px;
+    }
+
+    .toggle-btn {
+        margin-top: 10px;
+    }
+
+    .menu ul li {
+        padding: 10px;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu ul li {
+        padding: 8px;
+    }
+
+    .menu ul li a {
+        font-size: 14px;
+    }
+}
+
+#registro_form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color:#f9f9f9;
+    border-radius: 8px;
+    margin-top: 175px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+input:focus {
+    background-color: #cdcdcd;  /* Cinza claro */
+    outline: none;  /* Remove o contorno padrão do navegador */
+}
+
+.password-container {
+    position: relative;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.btnCadastro {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.imgPremium {
+    width: 200px;
+    height: 150px;
+}
+
+.header {
+    background-color: #f4f4f9;
+}
+
+body.dark-mode .usos {
+    color: #ddd;
+}
+
+/* Termos de Uso */
+.usos {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    color: #4e73df;
+    display: block;
+    text-decoration: none;
+}
+
+.usos:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color:  #4e73df;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Media Queries para dispositivos móveis e tablets */
+
+/* Para dispositivos de até 768px (tablets e celulares em modo paisagem) */
+@media screen and (max-width: 768px) {
+    .navegacao {
+        padding: 0 20px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navegacao a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    #registro_form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .toggle-btn {
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .imgPremium {
+        width: 150px;
+        height: 120px;
+    }
+
+    .btnCadastro {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .usos {
+        font-size: 18px;
+    }
+}
+
+/* Para dispositivos de até 480px (celulares em modo retrato) */
+@media screen and (max-width: 480px) {
+    .navegacao {
+        padding: 0 10px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navegacao a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    #registro_form {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .toggle-btn {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .imgPremium {
+        width: 120px;
+        height: 90px;
+    }
+
+    .btnCadastro {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .usos {
+        font-size: 16px;
+    }
+}
